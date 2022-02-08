@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Компьютерные курсы</title>
 </head>
@@ -26,7 +27,28 @@
                         <li><a href="#" class="header__nav-link">Контакты</a></li>
                     </ul>
                 </nav>
-                <button class="header__top-btn">Зайти в кабинет</button>
+                <button class="header__top-btn header__top-btn_hidden">Зайти в кабинет</button>
+
+                <button class="header__nav-btn">
+                    <span class="header__nav-btn-icon"></span>
+                </button>
+                <nav class="header__mobile-nav">
+                    <div class="header__mobile-list">
+                        <ul>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Главная</a></li>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Курсы</a></li>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Расписание</a></li>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Преподаватели</a></li>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Рассылка</a></li>
+                            <li><a class="header__mobile-list-underline" href="#" class="header__nav-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-nav-btn-wrap">
+                        <button class="header__top-btn header__mobile-nav-btn">Зайти в кабинет</button>
+                    </div>
+                </nav>
+
             </div>
 
             <div class="header__content">
@@ -35,26 +57,26 @@
                 </div>
 
                 <div class="header__time-wrap">
-                    <div class="header__day header__time">
+                    <div class="header__time">
                         <div class="header__time-text">
                             <p class="header__time-title">18</p>
                             <p class="header__time-subtitle">Дней</p>
                         </div>
                     </div>
 
-                    <div class="header__day header__time">
+                    <div class="header__time">
                         <div class="header__time-text">
                             <p class="header__time-title">18</p>
                             <p class="header__time-subtitle">Дней</p>
                         </div>
                     </div>
-                    <div class="header__day header__time">
+                    <div class="header__time">
                         <div class="header__time-text">
                             <p class="header__time-title">18</p>
                             <p class="header__time-subtitle">Дней</p>
                         </div>
                     </div>
-                    <div class="header__day header__time">
+                    <div class="header__time">
                         <div class="header__time-text">
                             <p class="header__time-title">18</p>
                             <p class="header__time-subtitle">Дней</p>
@@ -63,45 +85,50 @@
                 </div>
             </div>
 
+            <div class="header__bottom-wrap">
+                <div class="header__bottom container">
+                    <button class="header__bottom-btn">Заказать курс</button>
+                    <div class="header__bottom-number-wrap">
+                        <div class="header__bottom-text">
+                            <p>Учеников всего:</p>
+                            <p>Успешно закончили курс:</p>
+                        </div>
+                        <div class="header__bottom-number">
+                            <p>200</p>
+                            <p>190</p>
+                        </div>
+                    </div>
+                    
+                    
+            
+                    <div class="header__line-wrap">
+                        <div class="header__bottom-info-line">
+                            <p>Заработано учениками:</p>
+                            <p>400 000₽</p>
+                        </div>
+                        <div class="header__progressbar">
+                            <span style="width: 60%"></span>
+                        </div>
+            
+                        <div class="header__line-many">
+                            <p>0</p>
+                            <p>1 000 000₽</p>
+                        </div>
+                    </div>
+            
+            
+                </div>
             
         </div>
-        <div class="header__bottom-wrap">
-            <div class="header__bottom container">
-                <button class="header__bottom-btn">Заказать курс</button>
-                <div class="header__bottom-text">
-                    <p>Учеников всего:</p>
-                    <p>Успешно закончили курс:</p>
-                </div>
-                <div class="header__bottom-number">
-                    <p>200</p>
-                    <p>190</p>
-                </div>
         
-                <div class="header__line-wrap">
-                    <div class="header__bottom-info-line">
-                        <p>Заработано учениками:</p>
-                        <p>400 000₽</p>
-                    </div>
-                    <div class="header__progressbar">
-                        <span style="width: 60%"></span>
-                    </div>
-        
-                    <div class="header__line-many">
-                        <p>0</p>
-                        <p>1 000 000₽</p>
-                    </div>
-                </div>
-        
-        
-            </div>
         </div>
 
     </header>
 
     <main class="main">
         <section class="main__about-wrap container">
-            <div>
-                <img class="main__about-img" src="/img/PNG/about__img.png" alt="">
+            <div class="main__about-img">
+                <img class="main__about-icon" src="/img/PNG/about__img.png" alt="">
             </div>
 
             <div class="main__text-about">
@@ -203,7 +230,7 @@
         </section>
 
         <section class="main__partners-wrap">
-            <div class="main__pertners container">
+            <div class="main__partners container">
                 <div class="main__partner-title-wrap">
                     <div class="main__partner-logo">
                         <img class="main__logo-img" src="/img/SVG/iconHeadingTopRightCorner.svg" alt="">
@@ -374,6 +401,7 @@
         </div>
         <p class="footer__text-templates">Templates #18. More on Figma.info</p>
     </footer>
+    <script src="./js/media.js"></script>
 </body>
 
 </html>
