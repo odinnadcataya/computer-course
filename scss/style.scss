@@ -24,6 +24,9 @@ button {
     font-size: 48px;
     line-height: 67px;
 }
+.no-scroll {
+    overflow-y: hidden;
+}
 
 .header {
     
@@ -103,6 +106,7 @@ button {
             top: 10px;
         }
         &_close {
+            
             background-color: transparent;
             &::before {
                 transform: rotate(-45deg);

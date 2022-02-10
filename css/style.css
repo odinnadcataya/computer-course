@@ -101,6 +101,10 @@ button {
   line-height: 67px;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .header__wrap {
   background-image: url("./../img/JPG/main-screen__bgc.jpg");
   max-width: 1920px;
