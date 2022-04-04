@@ -29,7 +29,6 @@ button {
 }
 
 .header {
-    
     &__wrap {
         background-image: url("./../img/JPG/main-screen__bgc.jpg");
         max-width: 1920px;
@@ -106,7 +105,6 @@ button {
             top: 10px;
         }
         &_close {
-            
             background-color: transparent;
             &::before {
                 transform: rotate(-45deg);
@@ -176,7 +174,7 @@ button {
         width: 115px;
         height: 112px;
     }
-    &__time-text{
+    &__time-text {
         margin-top: 20px;
     }
 
@@ -258,7 +256,6 @@ button {
 
 /*MAIN*/
 .main {
-    
     &__about-wrap {
         display: flex;
         padding-top: 200px;
@@ -438,7 +435,7 @@ button {
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-bottom: none;
         border-left: none;
-        
+
         /* width: 318px;
         height: 150px; */
         &:nth-child(4n) {
@@ -452,7 +449,6 @@ button {
     &__grid-img {
         display: block;
         margin: 29px auto;
-        
     }
 
     &__prog-wrap {
@@ -636,14 +632,18 @@ button {
         background: transparent;
         border: 1px solid #ffffff;
         border-radius: 50px;
+        transition: 0.2s;
         &:active {
+            transition: 0.2s;
+            transform: scale(0.9);
+        }
+        &:hover {
             background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
         }
     }
 }
 /*FOOTER*/
 .footer {
-    
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 30px;
@@ -663,15 +663,13 @@ button {
         display: flex;
         margin: 0 auto 40px auto;
         justify-content: space-between;
-        max-width: 493px;//сумма ширин кнопки и тега p, снимаем галочку с тега пэ (margin-left)и прибавляем еще нужное количество пикселей чтобы тег пэ был 353пикселя как в макете
+        max-width: 493px; //сумма ширин кнопки и тега p, снимаем галочку с тега пэ (margin-left)и прибавляем еще нужное количество пикселей чтобы тег пэ был 353пикселя как в макете
         background: rgba(255, 255, 255, 0.25);
         border-radius: 50px;
-        
     }
-    &__form > p{
+    &__form > p {
         width: 100%;
         margin-left: 25px;
-        
     }
     &__input {
         background: transparent;
@@ -680,14 +678,13 @@ button {
         color: inherit;
         width: 100%;
         font-size: 16px;
-        
-        
     }
 
     &__btn {
         border-radius: 50px;
         padding: 10px 30px;
         background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+
         &:active {
             background: #451046;
         }
@@ -708,8 +705,5 @@ button {
         &:active {
             background: #7c6afa;
         }
-    }
-
-    &__text-templates {
     }
 }
