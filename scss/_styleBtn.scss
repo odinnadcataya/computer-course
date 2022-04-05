@@ -1,0 +1,56 @@
+/*Плавающая кнопка*/
+/* .main {
+    &__back-btn {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+        background-color: #d1a954;
+        border-radius: 50px;
+        z-index: 999;
+        p {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 15px;
+            a {
+                display: block;
+                padding-top: 10px;
+            }
+        }
+    }
+} */
+
+.back-btn {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 60px;
+    background-color: #d1a954;
+    border-radius: 50px;
+    z-index: 999;
+    p {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: bold;
+        line-height: 1.5;
+        font-size: 15px;
+        a {
+            display: block;
+            padding-top: 10px;
+        }
+    }
+}
+
+/*-----------------------------*/
