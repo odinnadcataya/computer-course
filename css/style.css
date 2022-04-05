@@ -521,6 +521,10 @@ button {
 }
 
 .main__about-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 200px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -548,7 +552,6 @@ button {
 }
 
 .main__start-wrap {
-  display: none;
   margin: 0 auto;
   padding-top: 200px;
 }

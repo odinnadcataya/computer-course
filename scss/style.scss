@@ -1,6 +1,5 @@
 @import "nullstyle.scss";
 @import "_styleBtn";
-
 body {
     background-image: url(./../img/PNG/bgc.png);
     font-family: "Roboto", sans-serif;
@@ -258,6 +257,7 @@ button {
 .main {
     flex: 1 0 auto;
     &__about-wrap {
+        display: flex;
         padding-top: 200px;
         justify-content: space-between;
         margin: 0 auto;
@@ -282,7 +282,6 @@ button {
     //БЫСТРЫЙ СТАРТ
 //**********************
     &__start-wrap {
-        display: none;
         margin: 0 auto;
         padding-top: 200px;
     }
